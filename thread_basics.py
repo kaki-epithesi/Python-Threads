@@ -22,23 +22,6 @@ t = threading.Thread(target = func, name = 'Thread1', args = ("Thread1",))
 
 t.start()
 
-# t.join()
-#
-# threads_list = []
-#
-# start = time.time()
-#
-# for i in range(5):
-#     t = threading.Thread(target = func, name = 'thread{}'.format(i+1), args = ('thread{}'.format(i+1),))
-#     threads_list.append(t)
-#     t.start()
-#     print ("{} has started".format(t.name))
-#
-# for t in threads_list:
-#     t.join()
-#
-# end = time.time()
-#
-# print ("time taken: {}".format(end-start))
-#
-# print ("all live threads finished job")
+t.join()
+
+print ("In Main function, executed before the function ends...")
