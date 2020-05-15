@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-
+# real run and __init__ method taken from threading.py L766
 # def run(self):
 #     """Method representing the thread's activity.
 #     You may override this method in a subclass. The standard run() method
